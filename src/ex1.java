@@ -4,8 +4,8 @@ public class ex1 {
         array[0] = 1292;
         array[1] = 894822;
         array[2] = 294818;
-        Sum = getSum(array);
-        system.out.println(Sum);
+        int Sum = getSum(array);
+        System.out.println(Sum);
     }
 
     static int getSum(int[] array) {
