@@ -11,10 +11,11 @@ import java.util.stream.Collectors;
 
 public class StudentManager
 {
+    private ArrayList<Student> students=new ArrayList<>();
     // method to add new student
-    public static void addstudent (List<Student> students, String name, int marks)
+    public void addstudent (Student student)
     {
-    students.add(new Student(name, marks));
+     students.add(student);
     }
     // method to search for students with specific marks
     public static List<Student> searchStudentsByMarks(List<Student> students, int marks)

@@ -9,13 +9,11 @@ public class Student
     String lastName;
     String firstName;
     int marks;
+public Student()
+{
 
-    public Student(String name, int marks) {
-    }
-
-    // Constructeur
-    public void student(int studentId, String lastName, String firstName, int marks)
-    {
+}
+    public Student(int studentId, String lastName, String firstName, int marks) {
         this.studentId = studentId;
         this.lastName = lastName;
         this.firstName = firstName;
@@ -54,5 +52,10 @@ public class Student
 
     public void setMarks(int marks) {
         this.marks = marks;
+    }
+
+    public String toString()
+    {
+        return "studentId=" + this.studentId + "lastName=" + this.lastName + "firstName=" + this.firstName + "marks=" + this.marks;
     }
 }

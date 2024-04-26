@@ -6,7 +6,7 @@
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
-public class MainStudent
+/*public class MainStudent
 {
     // Student class to represent individual students
         private String name;
@@ -40,9 +40,7 @@ public class MainStudent
         }
 
         // Method to add a new student to the records
-        public void addStudent(String name, int marks) {
-            students.add(new Student(name, marks));
-        }
+
 
         // Method to search for students based on a specific mark
         public List<Student> searchStudentsByMarks(int targetMarks) {
@@ -65,29 +63,30 @@ public class MainStudent
             }
         }
     }
-
+*/
     // Main class to demonstrate adding and searching for students
-    class Mainstudent {
+    public class Mainstudent {
         public static void main(String[] args) {
-            StudentRecords records = new StudentRecords();
-
+           // StudentRecords records = new StudentRecords();
+StudentManager studentmanager=new StudentManager();
+studentmanager.addstudent(new Student(434,"gdgdg","rerer",34));
             // Adding new students to the records
-            records.addStudent("Alice", 85);
-            records.addStudent("Bob", 72);
-            records.addStudent("Charlie", 45);
-            records.addStudent("Dave", 90);
-            records.addStudent("Eve", 65);
-            records.addStudent("Frank", 30);
+
+           // records.addStudent("Bob", 72);
+           // records.addStudent("Chloe", 45);
+            //records.addStudent("Jack", 90);
+           // records.addStudent("Alma", 65);
+           // records.addStudent("Maya", 30);
 
             // Display all students
             System.out.println("All students:");
-            records.displayAllStudents();
+            studentmanager.displayAllStudents();
 
             // Search for students with a specific mark
             int targetMarks = 72;
             System.out.println("\nStudents with " + targetMarks + " marks:");
-            List<Student> foundStudents = records.searchStudentsByMarks(targetMarks);
-            records.displayStudentCollection(foundStudents);
+            List<Student> foundStudents = studentmanager.searchStudentsByMarks(targetMarks);
+            //studentmanager.displayStudentCollection(foundStudents);
         }
     }
 
