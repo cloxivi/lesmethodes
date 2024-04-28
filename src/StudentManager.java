@@ -17,22 +17,22 @@ public class StudentManager
     {
      students.add(student);
     }
-    // method to search for students with specific marks
-    public static List<Student> searchStudentsByMarks(List<Student> students, int marks)
+    // method to search for students with specific marks --- Assez lourd alors que tu n'avais pas besoin de toutes ces tournures !!
+    public List<Student> searchStudentsByMarks(List<Student> students, int marks)
     {
         return students.stream()
                 .filter(student -> student.getMarks() == marks)
                 .collect(Collectors.toList());
     }
-    // method to display all students
-    public static void displayAllStudents(List<Student> students)
+    // method to display all students - Pas besoin de passer les paramètres car tu vas manipuler la même liste
+    public  void displayAllStudents()
     {
-        for (Student student : students) {
+        for (Student student:students) {
             System.out.println(student);
         }
     }
     // sorting function to sort students based on marks
-    public static void sortStudentsByMarks(List<Student> students)
+    public void sortStudentsByMarks()
     {
         Collections.sort(students, Comparator.comparingInt(Student::getMarks));
     }
