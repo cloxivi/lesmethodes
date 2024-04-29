@@ -18,12 +18,12 @@ public class StudentManager
      students.add(student);
     }
     // method to search for students with specific marks --- Assez lourd alors que tu n'avais pas besoin de toutes ces tournures !!
-    public List<Student> searchStudentsByMarks(List<Student> students, int marks)
+    /*public List<Student> searchStudentsByMarks(List<Student> students, int marks)
     {
         return students.stream()
                 .filter(student -> student.getMarks() == marks)
                 .collect(Collectors.toList());
-    }
+    }*/
     // method to display all students - Pas besoin de passer les paramètres car tu vas manipuler la même liste
     public  void displayAllStudents()
     {
